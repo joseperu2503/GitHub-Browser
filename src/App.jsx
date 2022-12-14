@@ -19,7 +19,6 @@ function App() {
       const userResponse = await getGithubUser(user != '' ? user : 'octocat')
       setUserState(userResponse.data)
     } catch (error) {
-      console.log('usuario no encontrado')
       setError(true)
     }
     setLoading(false)
